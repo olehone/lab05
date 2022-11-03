@@ -12,7 +12,7 @@ namespace UnitTest1
 		TEST_METHOD(TestMethod1)
 		{
 			double t;
-			t = floor(k(1, 2) * 10000000) / 10000000;
+			t = floor(k(1, 2)*10000000)/10000000;
 			Assert::AreEqual(t, 0.0295785);
 		}
 	};
