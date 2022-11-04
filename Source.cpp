@@ -34,7 +34,7 @@ double S3(const int N, const int i, double t)
 }
 double S4(const int N, const int i, double t)
 {
-	t = t + (1. / i + sqrt(1 + sin(1. * i) * sin(1. * i)) + S1(N, i + 1));
+	t = t + (1. / i + sqrt(1 + sin(1. * i)) * sin(1. * i));
 	if (i <= 1)
 		return t;
 	else
@@ -48,6 +48,6 @@ int main()
 	cout << "(rec up ++) S1 = " << S1(N, 1) << endl;
 	cout << "(rec up --) S2 = " << S2(N, N) << endl;
 	cout << "(rec down ++) S3 = " << S3(N, 1, 0) << endl;
-	cout << "(rec down --) S4 = " << S4(N, 1, 0) << endl;
+	cout << "(rec down --) S4 = " << S4(N, N, 0) << endl;
 	return 0;
 }
